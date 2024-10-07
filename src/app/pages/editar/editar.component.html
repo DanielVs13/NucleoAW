@@ -1,0 +1,18 @@
+<form (ngSubmit)="editar(formulario)" #formulario="ngForm">
+    <label>Ingrese ID del vehículo</label>
+    <input type="text" placeholder="Ejem: ABC1234" name="id" [(ngModel)]="id">
+
+    <label>Ingrese marca</label>
+    <input type="text" placeholder="Ejem: Toyota" name="marca" [(ngModel)]="marca">
+    
+    <label>Ingrese año</label>
+    <input type="number" placeholder="Ejem: 2022" name="anio" [(ngModel)]="anio">
+
+    <label>Ingrese modelo</label>
+    <input type="text" placeholder="Ejem: Corolla" name="modelo" [(ngModel)]="modelo">
+
+    <label>Ingrese link de la imagen</label>
+    <input type="text" placeholder="Ejem: ...." name="imagen"[(ngModel)]="imagen">
+
+    <button type="submit">Enviar</button>
+</form>

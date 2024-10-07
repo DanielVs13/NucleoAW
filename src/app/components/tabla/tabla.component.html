@@ -1,0 +1,19 @@
+<div class="row">
+  @for(item of libro;track item){
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <a href="{{ item.imagen }}">
+        <img src="{{ item.imagen }}" alt="Lights" style="width: 100%" />
+        <div class="caption">
+          <h2>{{ item.nombre }}</h2>
+          <h3>{{ item.anio }}</h3>
+
+          <button (click)="eliminar(item.id)">eliminar</button>
+          <br />
+          <button [routerLink]="['/editar/', item.id]">editar</button>
+        </div>
+      </a>
+    </div>
+  </div>
+  }
+</div>

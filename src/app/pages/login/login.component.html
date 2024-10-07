@@ -1,0 +1,10 @@
+<form (ngSubmit)="login(formulario)" #formulario="ngForm">
+
+    <label>Ingrese email</label>
+    <input type="email" placeholder="Ej: Juan@Pérez"  name="email" [(ngModel)]="email">
+    
+    <label>Ingrese contrseña</label>
+    <input type="password" placeholder="Ej: 25" name="password" [(ngModel)]="password">
+    
+    <button type="submit">Ingresar</button>
+</form>

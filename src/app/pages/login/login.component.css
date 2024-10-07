@@ -1,0 +1,72 @@
+form {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 30px;
+    max-width: 450px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    font-family: "Helvetica Neue", sans-serif;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: transform 0.2s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    transform: scale(1.02);
+    outline: none;
+  }
+  
+  select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23212121" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>')
+      no-repeat right 10px center; /* Icono de selección */
+    background-color: rgba(255, 255, 255, 0.95);
+    padding-right: 30px;
+  }
+  
+  button {
+    display: block; /* Ensures the button is a block-level element */
+    width: 100%; /* Makes the button full-width */
+    background-color: #ff4757;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 15px; 
+  }
+  
+  button:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    form {
+      padding: 20px;
+    }
+  }
+  

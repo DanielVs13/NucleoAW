@@ -1,0 +1,65 @@
+form {
+  background-color: #fce4ec; /* Color de fondo suave */
+  padding: 25px; /* Espaciado interno ligeramente aumentado */
+  max-width: 450px; /* Ancho máximo del formulario */
+  margin: 30px auto; /* Margen superior e inferior para centrar */
+  border-radius: 12px; /* Bordes más redondeados */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  font-family: "Verdana", sans-serif; /* Fuente moderna */
+}
+
+label {
+  display: block;
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 6px; /* Espaciado inferior aumentado */
+  color: #00796b; /* Color verde más vibrante */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%; /* Ancho completo */
+  padding: 12px; /* Espaciado interno aumentado */
+  margin-bottom: 18px; /* Espaciado inferior aumentado */
+  border: 1px solid #00796b; /* Borde verde más oscuro */
+  border-radius: 6px; /* Bordes redondeados */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interior suave */
+  font-size: 17px; /* Tamaño de fuente ligeramente mayor */
+  color: #004d40; /* Color del texto */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #004d40; /* Borde más oscuro al enfocar */
+  box-shadow: 0 0 6px rgba(0, 77, 64, 0.5); /* Sombra más pronunciada al enfocar */
+  outline: none; /* Sin contorno */
+}
+
+select {
+  appearance: none; /* Elimina el estilo predeterminado */
+  background: url('data:image/svg+xml;utf8,<svg fill="%2300796b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 12px center; /* Icono de selección */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+button {
+  background-color: #00796b; /* Color del botón verde más vibrante */
+  color: white; /* Color del texto en blanco */
+  padding: 12px 22px; /* Espaciado interno aumentado */
+  border: none; /* Sin borde */
+  border-radius: 6px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+  font-size: 17px; /* Tamaño de fuente ligeramente mayor */
+  transition: background-color 0.4s ease, transform 0.2s; /* Transiciones más suaves */
+}
+
+button:hover {
+  background-color: #004d40; /* Color más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+  form {
+      padding: 20px; /* Menos padding en pantallas pequeñas */
+  }
+}
